@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Perfume Paradise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" onsubmit="return login()">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+
+            <button type="submit">Login</button>
+            
+            <a href="index.html" class="back-button">Back</a>
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            window.location.href = "login_successful.html";
+            return false;
+        }
+    </script>
+</body>
+</html>
